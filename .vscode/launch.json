@@ -23,14 +23,10 @@
             "preLaunchTask": "Activate Virtual Environment"
         },
         {
-            "name": "Streamlit: Run",
+            "name": "APP: Run",
             "type": "debugpy",
             "request": "launch",
-            "module": "streamlit",
-            "args": [
-                "run",
-                "src/chat_dashbord.py"
-            ],
+            "module": "src.main",
             "console": "integratedTerminal",
             "justMyCode": false,
             "env": {
