@@ -13,7 +13,7 @@ fake_responses = [
     "Não entendi :(",
     "Obrigado por entrar em contato! Até mais!",
 ]
-fake_llm = FakeListLLM(responses=fake_responses)  # Use llm module
+fake_llm = FakeListLLM(responses=fake_responses)
 
 # Chain configuration
 llm_chain = LLMChain(
