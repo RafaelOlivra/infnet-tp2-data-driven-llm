@@ -1,0 +1,20 @@
+streamlit
+langchain
+langchain-core
+langchain-openai
+langchain_community
+langchain-huggingface
+langchain-google-genai
+fastapi
+python-dotenv
+google-auth
+huggingface-hub
+pyown
+accelerate
+google-generativeai
+transformers
+torch --index-url https://download.pytorch.org/whl/cu118
+torchvision
+torchaudio
+uvicorn
+sentencepiece

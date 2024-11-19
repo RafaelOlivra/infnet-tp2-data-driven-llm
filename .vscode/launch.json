@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Uvicorn API: Run",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "--port",
+                "8999",
+                "src.services.api:app",
+                "--reload"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
+            "windows": {
+                "console": "integratedTerminal"
+            },
+            "preLaunchTask": "Activate Virtual Environment"
+        },
+        {
+            "name": "Streamlit: Run",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "src/chat_dashbord.py"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
+            "windows": {
+                "console": "integratedTerminal"
+            },
+            "preLaunchTask": "Activate Virtual Environment"
+        }
+    ]
+}
